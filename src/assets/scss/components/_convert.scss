@@ -1,0 +1,42 @@
+.convertContainer {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .convertForm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h1{
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .convertInput {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .currency {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .dropdown{
+                    margin: 20px 30px 20px 30px;
+                }
+            }
+            .amount{
+                margin: 20px 30px 20px 30px;
+            }
+            .submit{
+                margin: 20px 30px 20px 30px;
+            }
+        
+        }
+    }
+}
