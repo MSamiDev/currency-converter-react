@@ -1,7 +1,53 @@
 // import { Menubar } from 'primereact/menubar';
+import { useRef } from 'react';
+
 import logo from '../assets/images/logo.png'
+import { Menu } from 'primereact/menu';
+import { Button } from 'primereact/button';
+import { Toast } from 'primereact/toast';
 
 const Header = () => {
+
+
+   const menu = useRef(null);
+   const toast = useRef(null);
+   const items = [
+      {
+         label: 'Menu',
+         items: [
+            {
+               label: 'Home',
+               url: 'https://reactjs.org/'
+            },
+            {
+               label: 'About',
+               url: 'https://reactjs.org/'
+            },
+
+            {
+               label: 'Contact',
+               url: 'https://reactjs.org/'
+            },
+
+         ]
+      },
+      {
+         label: 'Sign Up',
+         items: [
+
+            {
+               label: 'Sign In',
+               url: 'https://reactjs.org/'
+            },
+            {
+               label: 'Register',
+               url: 'https://reactjs.org/'
+            }
+         ]
+      }
+   ];
+
+
    return (
       <>
          <div className="header">
@@ -25,7 +71,10 @@ const Header = () => {
                   <a href="/">Sign In</a>
                   <a href="/" className="register">Register</a>
                </div>
+
             </div>
+            <Menu model={items} popup ref={menu} id="popup_menu" />
+            <Button icon="pi pi-bars" onClick={(event) => menu.current.toggle(event)} aria-controls="popup_menu" aria-haspopup className='button' />
 
          </div>
       </>

@@ -1,8 +1,18 @@
 .coverContainer{
-    height: 400px;
+    height: 70vh;
     overflow: hidden;
     img{
         width: 100vw;
-        margin-top: -300px;
+        margin-top: -40vh;
+    }
+}
+@media (max-width: 992px){
+    .coverContainer{
+        height: 70vh;
+        overflow: hidden;
+        img{
+            width: 150vw;
+            margin-top: -5vh;
+        }
     }
 }

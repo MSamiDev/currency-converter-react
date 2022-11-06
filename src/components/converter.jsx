@@ -5,10 +5,10 @@ import Convert from './convert';
 
 const Converter = () => {
 
-    const [activeIndex, setActiveIndex] = useState(3);
+    const [activeIndex, setActiveIndex] = useState(0);
 
 
-    // if (activeIndex == 0 ) {
+    // if (activeIndex == 0 ) {  
     //     button = <h1>jkasdgf</h1>;
     //   } else {
     //     button = <h1>kusdjafghisduhf</h1>;
