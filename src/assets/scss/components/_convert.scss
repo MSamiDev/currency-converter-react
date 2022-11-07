@@ -64,25 +64,30 @@
             }
     
             .convertInput {
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
     
                 .currency {
+                    width: 100%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
 
                     .dropdown{
-                        margin: 20px 30px 20px 30px;
+                        width: 100%;
+                        margin: 20px 0px 20px 0px;
                     }
                 }
                 .amount{
+                    width: 100%;
                     margin: 20px 30px 20px 30px;
                 }
                 .submit{
+                    width: 100%;
                     margin: 20px 30px 20px 30px;
                 }
             
